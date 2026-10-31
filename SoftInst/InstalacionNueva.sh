@@ -39,7 +39,7 @@
 if [ $cVersUbuntu == "resolut" ]; then
 
   echo ""
-  echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para Ubuntu 24.04 LTS (Noble Numbat)...${cFinColor}"
+  echo -e "${cColorAzulClaro}  Iniciando el script de instalación de xxxxxxxxx para Ubuntu 24.04 LTS (Resolute Raccoon)...${cFinColor}"
   echo ""
 
   echo ""
