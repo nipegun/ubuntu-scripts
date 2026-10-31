@@ -76,12 +76,11 @@ elif [ $vVersUbuntu == "noble" ]; then
   # Instalar herramientas
     # Agregar repositorio
       curl -L https://packages.microsoft.com/config/ubuntu/24.04/prod.list > /etc/apt/sources.list.d/msprod.list
-    # Agregar llave
-      curl -sL https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
     # Actualizar
       apt-get -y update
     # Instalar paquetes
-      apt-get -y install mssql-tools unixodbc-dev
+      apt-get -y install mssql-tools
+      apt-get -y install unixodbc-dev
     # Agregar la variable de entorno
       sh -c "echo 'export PATH=$PATH:/opt/mssql-tools/bin/' >> /root/.bash_profile"
       sh -c "echo 'export PATH=$PATH:/opt/mssql-tools/bin/' >> /root/.bashrc"
