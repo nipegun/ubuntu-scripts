@@ -198,7 +198,7 @@ elif [ $vVersUbuntu == "jammy" ]; then
       echo ""
     fi
   # Agregar el repositorio
-    curl -sL https://packages.microsoft.com/config/ubuntu/20.04/mssql-server-2022.list > /etc/apt/sources.list.d/mssql-server-2022.list
+    curl -sL https://packages.microsoft.com/config/ubuntu/20.04/mssql-server-2025.list > /etc/apt/sources.list.d/mssql-server-2022.list
   # Agregar la llave
     # Comprobar si el paquete wget está instalado. Si no lo está, instalarlo.
       if [[ $(dpkg-query -s wget 2>/dev/null | grep installed) == "" ]]; then
